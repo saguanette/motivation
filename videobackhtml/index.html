@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Motivation</title>
+</head>
+<body>
+    <section class="main">
+        <header>
+            <h2 class="logo">Get motivated</h2>
+            <div class="toggle"></div>
+        </header>
+      <video src="./media/background1.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Time is the most valuable resource</h2>
+            <h3>Do not waste it, looking back at the past</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore atque beatae omnis optio possimus quaerat incidunt 
+                mollitia, quas, maxime nulla velit provident aperiam, debitis modi quis obcaecati numquam asperiores nostrum?</p>
+            <a href="#">Find help</a>
+        </div>
+            <ul class="social">
+                <li><a href="#"><img src="media/icons8-facebook-circled-50.png"></a></li>
+                <li><a href="#"><img src="media/icons8-instagram-old-50.png" alt=""></a></li>
+                <li><a href="#"><img src="media/icons8-twitter-50.png" alt=""></a></li>
+            </ul>
+       
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">My page</a></li>
+            <li><a href="#">Posts</a></li>
+            <li><a href="#">Find a peer</a></li>
+            <li><a href="#">Motivation</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const main = document.querySelector('.main')
+
+        menuToggle.addEventListener('click', () =>{
+            menuToggle.classList.toggle('active')
+            main.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
